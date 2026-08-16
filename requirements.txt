@@ -1,0 +1,9 @@
+﻿# VPS Checker Telegram bot - Python dependencies
+# Confirmed working set (Python 3.10+ recommended).
+python-telegram-bot==22.8
+paramiko==5.0.0
+
+# Shared binary dependency of both above (pinned so installs are reproducible
+# and we don't pull a newer cryptography that could break paramiko/PTB).
+cryptography==50.0.0
+
